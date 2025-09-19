@@ -1,6 +1,10 @@
 import Image from "next/image";
 import { a } from "@/utils";
+// @ts-ignore
 import dataText from './test.txt'
+import style from './index.module.scss'
+import './index.scss';
+console.log(style.redText);
 
 console.log(a);
 

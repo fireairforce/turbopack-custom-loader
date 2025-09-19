@@ -7,6 +7,7 @@ const nextConfig: NextConfig = {
     resolveAlias: {
       "@": path.resolve(__dirname, "./src"),
     },
+    moduleIds: 'named',
     resolveExtensions: [".ts", ".tsx", ".js", ".jsx", ".json"],
     rules: {
       '*.txt': {
@@ -14,7 +15,11 @@ const nextConfig: NextConfig = {
         as: '*.js',
       },
     }
+  },
+  experimental: {
+    turbopackMinify: false,
   }
+
 };
 
 export default nextConfig;
